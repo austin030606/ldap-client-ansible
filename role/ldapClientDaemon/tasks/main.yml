@@ -1,0 +1,2 @@
+- name: start libnss
+  command: systemctl start libnss-ldap

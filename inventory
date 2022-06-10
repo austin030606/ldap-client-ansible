@@ -1,0 +1,2 @@
+[workstation]
+172.16.32.31 ansible_port=22 ansible_user=austin

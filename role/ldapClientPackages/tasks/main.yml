@@ -1,0 +1,13 @@
+- name: install sudo-ldap
+  apt: name=sudo-ldap state=latest
+  environment:
+    SUDO_FORCE_REMOVE: yes
+- name: install other packages
+  apt: 
+    name: 
+      - libnss-ldap
+      - libpam-ldap
+      - ldap-utils
+      - sssd-tools 
+    state: latest
+    update_cache: true 
